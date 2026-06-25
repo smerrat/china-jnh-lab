@@ -1,0 +1,286 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>金年会 · 简明知识库</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            background-color: #fafafa;
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "PingFang SC", "Microsoft YaHei", "Helvetica Neue", Arial, sans-serif;
+            color: #1e2a3a;
+            line-height: 1.7;
+            padding: 2rem 1.25rem;
+        }
+
+        .page {
+            max-width: 720px;
+            margin: 0 auto;
+            background-color: #ffffff;
+            padding: 2.5rem 2rem;
+            border-radius: 18px;
+            box-shadow: 0 2px 14px rgba(0, 0, 0, 0.02), 0 1px 4px rgba(0, 0, 0, 0.02);
+        }
+
+        @media (max-width: 500px) {
+            body {
+                padding: 1rem 0.75rem;
+            }
+            .page {
+                padding: 1.75rem 1.2rem;
+                border-radius: 12px;
+            }
+        }
+
+        .section-label {
+            font-size: 0.7rem;
+            letter-spacing: 0.4px;
+            text-transform: uppercase;
+            color: #9aa6b5;
+            margin-bottom: 0.5rem;
+            font-weight: 500;
+        }
+
+        h1 {
+            font-size: 2rem;
+            font-weight: 500;
+            letter-spacing: -0.02em;
+            color: #10161e;
+            margin-bottom: 1rem;
+            line-height: 1.3;
+            border-left: 4px solid #2b6e8f;
+            padding-left: 1rem;
+        }
+
+        h2 {
+            font-size: 1.3rem;
+            font-weight: 500;
+            color: #1a293b;
+            margin: 2rem 0 0.75rem 0;
+            letter-spacing: -0.01em;
+            border-bottom: 1px solid #edf0f3;
+            padding-bottom: 0.4rem;
+        }
+
+        h3 {
+            font-size: 1.05rem;
+            font-weight: 500;
+            color: #1c3145;
+            margin: 1.8rem 0 0.5rem 0;
+        }
+
+        p {
+            margin-bottom: 1rem;
+            color: #2d3b4b;
+        }
+
+        a {
+            color: #1f627d;
+            text-decoration: none;
+            border-bottom: 1px dotted #b5cedb;
+            transition: border-color 0.2s, color 0.2s;
+        }
+
+        a:hover {
+            color: #0b3b4e;
+            border-bottom: 1px solid #0b3b4e;
+        }
+
+        .intro-text {
+            font-size: 1.02rem;
+            background: #f4f8fc;
+            padding: 1.2rem 1.4rem;
+            border-radius: 14px;
+            margin: 1.2rem 0 1.8rem 0;
+            color: #1a2f3f;
+        }
+
+        .guide-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 1rem;
+            margin: 1.4rem 0 1rem 0;
+        }
+
+        @media (max-width: 520px) {
+            .guide-grid {
+                grid-template-columns: 1fr;
+            }
+        }
+
+        .guide-card {
+            background: #f6f9fc;
+            border-radius: 14px;
+            padding: 1rem 1.2rem;
+            border: 1px solid #e7edf2;
+            transition: background 0.2s;
+        }
+
+        .guide-card:hover {
+            background: #edf4fa;
+        }
+
+        .guide-card .card-title {
+            font-weight: 500;
+            font-size: 1rem;
+            color: #133244;
+            margin-bottom: 0.25rem;
+        }
+
+        .guide-card .card-desc {
+            font-size: 0.9rem;
+            color: #3f5368;
+            line-height: 1.5;
+        }
+
+        .notice-box {
+            background: #f9f6ee;
+            border-left: 4px solid #b5945e;
+            padding: 1rem 1.3rem;
+            border-radius: 10px;
+            margin: 2rem 0 1.2rem 0;
+        }
+
+        .notice-box .notice-title {
+            font-weight: 500;
+            font-size: 0.9rem;
+            color: #7d663b;
+            letter-spacing: 0.3px;
+            margin-bottom: 0.3rem;
+        }
+
+        .notice-box p {
+            font-size: 0.95rem;
+            color: #2f423b;
+            margin-bottom: 0.2rem;
+        }
+
+        .faq-mini {
+            margin: 1.6rem 0 0.2rem 0;
+        }
+
+        .faq-item {
+            padding: 0.7rem 0;
+            border-bottom: 1px solid #eef2f6;
+        }
+
+        .faq-item:last-child {
+            border-bottom: none;
+        }
+
+        .faq-q {
+            font-weight: 500;
+            color: #1a2b3d;
+        }
+
+        .faq-a {
+            font-size: 0.93rem;
+            color: #3c5067;
+            margin-top: 0.15rem;
+        }
+
+        .related-links {
+            margin-top: 2.2rem;
+            padding-top: 1.2rem;
+            border-top: 1px solid #e8edf2;
+        }
+
+        .related-links p {
+            margin-bottom: 0.3rem;
+        }
+
+        .footer-note {
+            margin-top: 2.5rem;
+            font-size: 0.85rem;
+            color: #7c8b9c;
+            text-align: center;
+            border-top: 1px solid #ecf0f4;
+            padding-top: 1.4rem;
+        }
+    </style>
+</head>
+<body>
+    <div class="page">
+        <div class="section-label">📖 简明知识库</div>
+        <h1>金年会 · 从入门到熟悉</h1>
+
+        <div class="intro-text">
+            如果你刚刚接触 <a href="https://china-jnh.com">金年会</a>，可能会面对大量信息而无从下手。这里没有冗长教程，只有一份按主题整理的快速索引，以及一些值得留意的访问细节。
+        </div>
+
+        <h2>📂 指南目录</h2>
+        <div class="guide-grid">
+            <div class="guide-card">
+                <div class="card-title">基础认识</div>
+                <div class="card-desc">了解金年会的定位、主要服务与适用场景，建立整体印象。</div>
+            </div>
+            <div class="guide-card">
+                <div class="card-title">功能速览</div>
+                <div class="card-desc">核心模块与操作路径一览，方便快速定位你需要的部分。</div>
+            </div>
+            <div class="guide-card">
+                <div class="card-title">常见疑问</div>
+                <div class="card-desc">汇集初次使用时常遇到的小问题，附简要解答。</div>
+            </div>
+            <div class="guide-card">
+                <div class="card-title">使用提醒</div>
+                <div class="card-desc">关于访问环境、账户安全与信息核对的实用提示。</div>
+            </div>
+        </div>
+
+        <h2>🧭 说明区 · 定位与特点</h2>
+        <p>
+            <a href="https://china-jnh.com">金年会</a> 并不是一个单一的资讯站，而是一个围绕特定领域持续整理、更新与互动的知识型平台。它的内容结构更接近「主题库」——每一块信息都经过筛选与归类，减少无关干扰。
+        </p>
+        <p>
+            从实际体验来看，这个网站有几个值得留意的特点：信息密度适中，导航逻辑偏重分类而非搜索；更新频率不固定但内容质量稳定；部分板块需要一定的浏览耐心才能找到真正需要的条目。
+        </p>
+
+        <div class="notice-box">
+            <div class="notice-title">⚠️ 访问提醒</div>
+            <p>建议使用主流浏览器的最新版本，并保持网络通畅。部分页面可能需等待数秒加载。</p>
+            <p>如果你是通过第三方链接或摘要进入，请留意核对当前页面是否属于 <a href="https://china-jnh.com">金年会</a> 主站，避免混淆。</p>
+            <p>涉及个人账户或敏感操作时，请确认地址栏域名无误，不要轻信非官方渠道的信息。</p>
+        </div>
+
+        <h2>❓ FAQ 摘要</h2>
+        <div class="faq-mini">
+            <div class="faq-item">
+                <div class="faq-q">Q：从哪里开始看比较合适？</div>
+                <div class="faq-a">如果没有明确目标，可以先浏览「基础认识」分类，通常包含概述与使用场景。之后再根据兴趣深入其他板块。</div>
+            </div>
+            <div class="faq-item">
+                <div class="faq-q">Q：页面内容多久更新一次？</div>
+                <div class="faq-a">没有固定周期，通常按主题需求或信息变化进行补充。重要变动会在相关条目中标注时间。</div>
+            </div>
+            <div class="faq-item">
+                <div class="faq-q">Q：遇到打不开或显示异常怎么办？</div>
+                <div class="faq-a">首先检查网络与浏览器设置；若问题持续，可稍后再试。网站无过多外部依赖，稳定性较好。</div>
+            </div>
+            <div class="faq-item">
+                <div class="faq-q">Q：能否转载或引用站内内容？</div>
+                <div class="faq-a">建议先查阅站内相关说明或联系确认，通常非商业引用需注明出处，具体以网站声明为准。</div>
+            </div>
+        </div>
+
+        <h2>📎 相关信息区</h2>
+        <div class="related-links">
+            <p>▪ 网站主域：<a href="https://china-jnh.com">金年会</a> （建议直接收藏，避免通过中转链接访问）</p>
+            <p>▪ 内容类型：主题知识库 / 指南索引 / 实用参考</p>
+            <p>▪ 适用人群：需要系统了解该领域话题的读者与研究者</p>
+            <p>▪ 推荐做法：先浏览分类，再细读具体条目；善用页面内锚点或目录导航</p>
+        </div>
+
+        <div class="footer-note">
+            本页为独立介绍页，内容基于公开信息整理，仅供参考。<br>
+            页面设计与布局仅用于说明，不构成对网站功能的背书。
+        </div>
+    </div>
+</body>
+</html>
